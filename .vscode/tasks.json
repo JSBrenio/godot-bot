@@ -1,0 +1,19 @@
+{
+    // Configures tasks for building the project using .NET CLI
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dotnet: build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ]
+}
