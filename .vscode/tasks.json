@@ -1,19 +1,17 @@
 {
-    // Configures tasks for building the project using .NET CLI
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "dotnet: build",
-            "command": "dotnet",
+            "label": "gdscript-debug",
             "type": "process",
+            "command": "${env:USERPROFILE}\\Downloads\\Godot_v4.4-stable_mono_win64\\Godot_v4.4-stable_mono_win64.exe",
             "args": [
-                "build"
+                "--path",
+                "${workspaceFolder}",
+                "--debug-collisions",
+                "--verbose"
             ],
-            "problemMatcher": "$msCompile",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "problemMatcher": []
         }
     ]
 }
